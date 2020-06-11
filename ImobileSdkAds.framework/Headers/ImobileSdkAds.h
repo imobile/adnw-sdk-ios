@@ -194,6 +194,15 @@ typedef enum {
  */
 + (BOOL)showBySpotIDForAdMobMediation:(NSString *)spotId View:(UIView *)view;
 
+/**
+ AdMobMediation用のShowAd
+ @param spotId スポットID
+ @param view 表示を行う対象となるUIView
+ @param ratio 拡大比率
+ @return BOOL スポットが登録済みの場合はYES
+ */
++ (BOOL)showBySpotIDForAdMobMediation:(NSString *)spotId View:(UIView *)view Ratio:(float)ratio;
+
 #pragma mark - setter
 
 /**
