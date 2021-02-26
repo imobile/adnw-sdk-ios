@@ -1,4 +1,4 @@
-SDK_VERSION = "2.0.33"
+SDK_VERSION = "2.1.0"
 
 Pod::Spec.new do |spec|
 
@@ -19,7 +19,7 @@ ImobileSdkAds is i-mobile SDK for iOS.
   spec.source       = { :http => "https://github.com/imobile/adnw-sdk-ios/releases/download/v#{SDK_VERSION}/ImobileSdkAds.framework.zip", :type => 'zip' }
   spec.vendored_frameworks = "ImobileSdkAds.framework"
 
-  spec.frameworks   = "AdSupport", "SystemConfiguration", "CoreLocation", "WebKit"
+  spec.frameworks   = "AdSupport", "SystemConfiguration", "CoreLocation", "WebKit", "StoreKit"
   spec.xcconfig     = { "OTHER_LDFLAGS" => "-lObjC" }
 
 end
