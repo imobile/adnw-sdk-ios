@@ -14,12 +14,17 @@ ImobileSdkAds is i-mobile SDK for iOS.
   spec.license      = { :type => "Copyright", :text => "Copyright 2013 i-mobile" }
   spec.author       = "i-mobile"
   spec.platform     = :ios
-  spec.ios.deployment_target = "8.0"
+  spec.ios.deployment_target = "9.0"
 
   spec.source       = { :http => "https://github.com/imobile/adnw-sdk-ios/releases/download/v#{SDK_VERSION}/ImobileSdkAds.framework.zip", :type => 'zip' }
   spec.vendored_frameworks = "ImobileSdkAds.framework"
 
   spec.frameworks   = "AdSupport", "SystemConfiguration", "CoreLocation", "WebKit", "StoreKit"
   spec.xcconfig     = { "OTHER_LDFLAGS" => "-lObjC" }
+
+  spec.pod_target_xcconfig = {
+    'EXCLUDED_ARCHS[sdk=iphonesimulator*]' => 'arm64'
+  }
+  spec.user_target_xcconfig = { 'EXCLUDED_ARCHS[sdk=iphonesimulator*]' => 'arm64' }
 
 end
