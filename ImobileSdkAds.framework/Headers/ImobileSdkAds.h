@@ -266,6 +266,13 @@ typedef enum {
  */
 + (NSNumber *)getCountAttemptsToShowTotalBySpotID:(NSString *)spotId;
 
+/**
+ * SDKバージョンを x.y.z 形式の文字列として取得する。
+ *
+ * @return SDKバージョン
+ */
++ (NSString *)getSdkVersion;
+
 @end
 
 
