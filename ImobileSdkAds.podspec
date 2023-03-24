@@ -1,4 +1,4 @@
-SDK_VERSION = "2.3.0"
+SDK_VERSION = "2.3.1"
 
 Pod::Spec.new do |spec|
 
