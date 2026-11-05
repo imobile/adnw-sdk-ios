@@ -31,7 +31,12 @@ dependencies: [
     .package(url: "https://github.com/imobile/adnw-sdk-ios", from: "2.3.4")
 ],
 targets: [
-    .target(name: "YourApp", dependencies: ["ImobileSdkAds"])
+    .target(
+        name: "YourApp",
+        dependencies: [
+            .product(name: "ImobileSdkAds", package: "adnw-sdk-ios")
+        ]
+    )
 ]
 ```
 
